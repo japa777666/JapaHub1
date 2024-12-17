@@ -10,7 +10,7 @@ local aimSensitivity = 0.3
 local fovSize = 100
 local fovCircle = Drawing.new("Circle")
 fovCircle.Color = Color3.fromRGB(255, 255, 255)
-fovCircle.Thickness = 1
+fovCircle.Thickness = 2
 fovCircle.NumSides = 100
 fovCircle.Radius = fovSize
 fovCircle.Filled = false
@@ -28,8 +28,8 @@ local NameTags = {}
 -- Funções para Box ESP
 local function CreateBox()
     local box = Drawing.new("Square")
-    box.Thickness = 2
-    box.Color = Color3.fromRGB(255, 0, 0)
+    box.Thickness = 2.5
+    box.Color = Color3.fromRGB(255, 255, 255)
     box.Filled = false
     box.Visible = false
     return box
@@ -99,7 +99,7 @@ end
 -- Funções para Nametags
 local function CreateNameTag()
     local nametag = Drawing.new("Text")
-    nametag.Size = 12
+    nametag.Size = 17.5
     nametag.Color = Color3.fromRGB(255, 255, 255)
     nametag.Visible = false
     return nametag
@@ -361,7 +361,6 @@ local ToggleAimbot = Tabs.Self:AddToggle("Nc_toggle", { Title = "Nc" })
 ToggleAimbot:OnChanged(function(state)
     toggleNoClip(state)
 end)
-
 
 updateFovCircle()
 
