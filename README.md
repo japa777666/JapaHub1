@@ -297,7 +297,7 @@ local Window = Fluent:CreateWindow({
     Size = UDim2.fromOffset(1000, 500),
     Acrylic = false,
     transparency = false,
-    Theme = "Amethyst",
+    Theme = "light",
     MinimizeKey = Enum.KeyCode.RightShift -- Used when theres no MinimizeKeybind
 })
 
